@@ -1,0 +1,43 @@
+@media (max-width: 374px) {
+  .btn-primary {
+    font-size: 12px;
+  }
+
+  .banner_price {
+    span {
+      font-size: 16px;
+    }
+
+    font-size: 12px;
+  }
+
+  .banner_list li {
+    font-size: 16px;
+  }
+
+  .banner_title {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .banner_title {
+    margin-top: 40px;
+  }
+
+  .banner_privacy p {
+    margin-top: 20px;
+  }
+
+  .banner_info {
+    min-height: 440px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1025px) {
+  .banner {
+    display: none;
+  }
+}

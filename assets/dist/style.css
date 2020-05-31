@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "SFPro Light";
+  src: url("../fonts/SFProDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFPro Bold";
+  src: url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SFPro Bold";
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+
+.message {
+  font-size: 40px;
+  text-align: center;
+}
+
+.btn-primary {
+  width: 100%;
+  min-width: 140px;
+  max-width: 55%;
+  height: 41px;
+  border-radius: 24px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: "SFPro Bold";
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#f6254e),
+    to(#ff598f)
+  );
+  background: linear-gradient(270deg, #f6254e, #ff598f);
+}
+
+.label {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 0px 12px 0 28px;
+  border: solid 1px #ee334b;
+  border-radius: 100px;
+}
+
+.label:first-child {
+  width: 100%;
+  margin-top: 0;
+}
+
+.banner {
+  width: 100%;
+  min-width: 310px;
+  height: 100vh;
+  height: -webkit-fill-available;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.banner_close-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.banner_close-button img {
+  width: 16px;
+  min-width: 16px;
+}
+
+.banner_content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 10px 20px;
+}
+
+.banner_info {
+  width: 100%;
+  max-width: 500px;
+  min-height: calc(100% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.banner_title {
+  font-size: 34px;
+  line-height: 45px;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.banner_labels {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.banner_list {
+  margin-top: 32px;
+  position: relative;
+  left: -4px;
+}
+
+.banner_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-size: 17px;
+  line-height: 33px;
+  font-family: "SFPro Light";
+}
+
+.banner_list li img {
+  width: 11px;
+  min-width: 11px;
+  margin-right: 12px;
+}
+
+.banner_list li p {
+  letter-spacing: 0.4px;
+  word-spacing: 2px;
+}
+
+.banner_price {
+  color: #f52e50;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "SFPro Light";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.banner_price span {
+  color: #ee334b;
+  font-size: 22px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-family: "SFPro Bold";
+}
+
+.banner_privacy {
+  max-width: 500px;
+}
+
+.banner_privacy p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  font-family: "SFPro Light";
+  padding-bottom: 16px;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.banner:after {
+  content: "";
+  width: 100%;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 255, 255, 0)),
+    to(white)
+  );
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+}
+
+@media (max-width: 374px) {
+  .btn-primary {
+    font-size: 12px;
+  }
+  .banner_price {
+    font-size: 12px;
+  }
+  .banner_price span {
+    font-size: 16px;
+  }
+  .banner_list li {
+    font-size: 16px;
+  }
+  .banner_title {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .banner_title {
+    margin-top: 40px;
+  }
+  .banner_privacy p {
+    margin-top: 20px;
+  }
+  .banner_info {
+    min-height: 440px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1025px) {
+  .banner {
+    display: none;
+  }
+}

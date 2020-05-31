@@ -1,0 +1,11 @@
+// positions
+@mixin flex-ac-jc() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-ac() {
+  display: flex;
+  align-items: center;
+}
